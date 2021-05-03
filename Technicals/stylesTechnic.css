@@ -1,0 +1,81 @@
+.home-style{ 
+    background-image: url('/imgs/fondo-tech.png');
+    background-size: 1600px 800px;
+}
+
+.navbar-brand{
+    font-size: 28px;
+}
+
+.nav-link{
+    font-size: 20px;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: #fff;
+}
+
+.back{
+    background-color: rgba(14, 5, 5, 0.39);
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.form-control.validate{
+   width: 350px;
+   margin: 25px 75px 20px;   
+}
+
+.md-form i{
+    /* Size and position */
+    left: 35px;
+    top: 35px;
+    position: absolute;
+    height: 40px;
+    width: 36px;
+
+    /* Styles */
+    color: #777777;
+    line-height: 42px;
+}
+
+.md-form.mb-4 i{
+    /* Size and position */
+    left: 35px;
+    top: 92px;
+    position: absolute;
+    height: 36px;
+    width: 36px;
+ 
+    /* Styles */
+    color: #777777;
+    line-height: 42px;
+ }
+
+#modFooter{
+    height: 130px;
+}
+
+#modFooter #ForgetAndRegister{
+    left: 50px;
+    margin-top: 60px;
+    margin-right: 10px;
+}
+
+#modFooter #ForgetAndRegister #Forget{
+    margin-right: 100px;
+}
+
+#idLogin{
+    left: 25px;
+    top: 275px;
+    position: absolute;
+}
+
+#userImg{
+    height: 40px;
+}
+
+

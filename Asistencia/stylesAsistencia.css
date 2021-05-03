@@ -1,0 +1,60 @@
+.home-style{ 
+    background-image: url('../imgs/fondo-asist2.jpg');
+    background-size: 1600px 1600px;
+}
+
+.navbar-brand{
+    font-size: 28px;
+}
+
+.nav-link{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: #fff;
+}
+
+.back{
+    background-color: rgba(14, 5, 5, 0.39);
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.form-control.validate{
+   width: 350px;  
+}
+
+.md-form i{
+    /* Size and position */
+    left: 35px;
+    top: 35px;
+    position: absolute;
+    height: 40px;
+    width: 36px;
+
+    /* Styles */
+    color: #777777;
+    line-height: 42px;
+}
+
+.md-form.mb-4 i{
+    /* Size and position */
+    left: 35px;
+    top: 92px;
+    position: absolute;
+    height: 36px;
+    width: 36px;
+ 
+    /* Styles */
+    color: #777777;
+    line-height: 42px;
+ }
+
+
+
+
+

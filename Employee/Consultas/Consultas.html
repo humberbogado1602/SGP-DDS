@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>SGP - Employee</title>
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+  <!-- bootstrap  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- font awesome    -->
+  <script src="https://kit.fontawesome.com/d65802d63a.js"></script>
+  <!-- SCROOLL REVEAL JS LIBRARY CDN -->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="styleConsultas.css">
+</head>
+
+<body class="home-style">
+  <nav class="navbar navbar-expand-sm navbar-dark " style="background-color: #24ddeb5e;">
+    <a class="navbar-brand" href="../Employee.html">
+      <img src="/imgs/Logo-2.png" alt="Max Logo" style="height: 60px; width: 220px">
+    </a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mr-3 mt-1 dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" style="font-size: 25px" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false"><i class="fas fa-list"></i> Operación</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="../RegisterCall/Call.html">Registrar Llamada</a>
+            <a class="dropdown-item" href="../Reclamos/Reclamos.html">Lista de Reclamos</a>
+            <a class="dropdown-item" href="Consultas.html">Consultas</a>
+            <a class="dropdown-item" href="../Asistencias/Asistencias.html">
+              Asistencias <span class="badge badge-info">4</span>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item avatar dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" style="width: 50px; height: 50px;" id="userImg"
+              class="rounded-circle z-depth-0" alt="avatar image">
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
+            aria-labelledby="navbarDropdownMenuLink-55">
+            <a class="dropdown-item" href="#">Perfil</a>
+            <a class="dropdown-item" href="#">Preferencias</a>
+            <a class="dropdown-item" href="#">Seguridad</a>
+            <a class="dropdown-item" href="/SGPHome.html">Salir</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- TABLE -->
+  <h1 class="container text-center mt-3 text-light" style="font-size: 60px">CONSULTAS</h1>
+  <form class="form-row">
+    <div id="searchIconCont">
+      <button class="btn btn-info" id="searchButton" onclick="buttonConfirm()">
+        <i class="fas fa-search fa-lg text-light" id="searchIcon"></i>
+      </button>
+    </div>
+    <input class="form-control" type="text" id="searchInput" placeholder="N°Consulta" aria-label="Search">
+  </form>
+  <div id="TableReclamos">
+    <table class="table table-hover rounded container bg-light" style="margin-top: 25px;">
+      <thead style="width: 50px">
+        <tr>
+          <th scope="col" class="btn-light">N° Consulta</th>
+          <th scope="col" class="btn-light">Nombre</th>
+          <th scope="col" class="btn-light">Email</th>
+          <th scope="col" class="btn-light">Fecha</th>
+          <th scope="col" class="btn-light">Estado</th>
+          <th scope="col" >Opciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">213</th>
+          <td>Juan</td>
+          <td>mark@hotmail.com</td>
+          <td>24/02/19</td>
+          <td><i class="fa fa-check fa-2x text-success" aria-hidden="true"></i></td>
+          <td class="operations">
+            <button class="btn btn-info" data-toggle="modal" data-target="#responseModal"
+              title="Responder">Responder</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">214</th>
+          <td>Pedro</td>
+          <td>mark@hotmail.com</td>
+          <td>24/02/19</td>
+          <td><i class="fa fa-check fa-2x text-success" aria-hidden="true"></i></td>
+          <td class="operations">
+            <button class="btn btn-info" data-toggle="modal" data-target="#responseModal"
+              title="Responder">Responder</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">215</th>
+          <td>Pablo</td>
+          <td>mark@hotmail.com</td>
+          <td>24/02/19</td>
+          <td><i class="fas fa-exclamation fa-2x text-warning container" aria-hidden="true"></i></td>
+          <td class="operations">
+            <button class="btn btn-info" data-toggle="modal" data-target="#responseModal"
+              title="Responder">Responder</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">216</th>
+          <td>Julio</td>
+          <td>mark@hotmail.com</td>
+          <td>24/02/19</td>
+          <td><i class="fa fa-check fa-2x text-success" aria-hidden="true"></i></td>
+          <td class="operations">
+            <button class="btn btn-info" data-toggle="modal" data-target="#responseModal"
+              title="Responder">Responder</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">217</th>
+          <td>Jose</td>
+          <td>mark@hotmail.com</td>
+          <td>24/02/19</td>
+          <td><i class="fas fa-exclamation fa-2x text-warning container" aria-hidden="true"></i></td>
+          <td class="operations">
+            <button class="btn btn-info" data-toggle="modal" data-target="#responseModal"
+              title="Responder">Responder</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">218</th>
+          <td>Cristian</td>
+          <td>mark@hotmail.com</td>
+          <td>24/02/19</td>
+          <td><i class="fas fa-exclamation fa-2x text-warning container" aria-hidden="true"></i></td>
+          <td class="operations">
+            <button class="btn btn-info" data-toggle="modal" data-target="#responseModal"
+              title="Responder">Responder</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">219</th>
+          <td>Sole</td>
+          <td>mark@hotmail.com</td>
+          <td>24/02/19</td>
+          <td><i class="fa fa-check fa-2x text-success" aria-hidden="true"></i></td>
+          <td class="operations">
+            <button class="btn btn-info" data-toggle="modal" data-target="#responseModal"
+              title="Responder">Responder</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">220</th>
+          <td>Rocio</td>
+          <td>mark@hotmail.com</td>
+          <td>24/02/19</td>
+          <td><i class="fas fa-exclamation fa-2x text-warning container" aria-hidden="true"></i></td>
+          <td class="operations">
+            <button class="btn btn-info" data-toggle="modal" data-target="#responseModal"
+              title="Responder">Responder</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">221</th>
+          <td>Chapa</td>
+          <td>mark@hotmail.com</td>
+          <td>24/02/19</td>
+          <td><i class="fa fa-check fa-2x text-success" aria-hidden="true"></i></td>
+          <td class="operations">
+            <button class="btn btn-info" data-toggle="modal" data-target="#responseModal"
+              title="Responder">Responder</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">222</th>
+          <td>Andres</td>
+          <td>mark@hotmail.com</td>
+          <td>24/02/19</td>
+          <td><i class="fa fa-check fa-2x text-success" aria-hidden="true"></i></td>
+          <td class="operations">
+            <button class="btn btn-info" data-toggle="modal" data-target="#responseModal"
+              title="Responder">Responder</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">223</th>
+          <td>Lean</td>
+          <td>mark@hotmail.com</td>
+          <td>24/02/19</td>
+          <td><i class="fas fa-exclamation fa-2x text-warning container" aria-hidden="true"></i></td>
+          <td class="operations">
+            <button class="btn btn-info" data-toggle="modal" data-target="#responseModal"
+              title="Responder">Responder</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">224</th>
+          <td>Jorge</td>
+          <td>mark@hotmail.com</td>
+          <td>24/02/19</td>
+          <td><i class="fas fa-exclamation fa-2x text-warning container" aria-hidden="true"></i></td>
+          <td class="operations">
+            <button class="btn btn-info" data-toggle="modal" data-target="#responseModal"
+              title="Responder">Responder</button>
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
+    <div class="form-row container col-12">
+      <ul class="pagination" style="margin-left: 190px">
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Siguiente Página</a></li>
+      </ul>
+      <button class="btn btn-primary" style="height: 38px;width: 200px; margin-left: 680px; margin-bottom: 90px;"><i class="fas fa-print"></i>
+        Imprimir Informe</button>
+    </div>
+  </div>
+
+
+  <!-- Modal Responder -->
+  <div class="modal fade" id="responseModal" tabindex="-1" role="dialog" aria-labelledby="responseModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="responseModalLabel">CONSULTA N°232</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>Consulta</h5>
+          <textarea name="textarea" id="consulta" cols="62"
+            rows="7">Hola! Cuando mi calefon enciende hace un ruido de vibracion, es peligroso?</textarea>
+          <h5>Respuesta</h5>
+          <textarea name="textarea" id="razonTextArea" cols="62" rows="7"></textarea>
+          <input type="checkbox" name="derivarServicioTécnico" id="serviceCheck" onclick="showServiceIssue()"> Derivar a
+          Técnico Externo
+        </div>
+        <div class="modal-footer">
+          <a href="Consultas.html" class="btn btn-success" id="reclamoButton">Reclamo a Técnico Externo</a>
+          <a href="Consultas.html" class="btn btn-primary">Responder</a>
+          <button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Client Product ID-->
+  <!-- Modal -->
+  <!--
+  <div class="modal fade" id="prodId" tabindex="-1" role="dialog" aria-labelledby="productIdModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="productIdModalLabel">Ingrese ID Producto</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input class="container rounded" type="text" name="inputId" placeholder="ID Product Number">
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-primary" href="/Employee/RegisterCall/Call.html">Aceptar</a>
+
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+
+  <!--Custom JS-->
+  <script type="text/javascript" src="Consultas.js"></script>
+  <!--Jquery, Popper, JS-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

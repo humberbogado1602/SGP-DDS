@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SGP - Home</title>
+     <!-- GOOGLE FONT -->
+     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font awesome    -->
+    <script src="https://kit.fontawesome.com/d65802d63a.js"></script>
+    <!-- SCROOLL REVEAL JS LIBRARY CDN -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="home-style" >
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark " style="background-color: #a014205e;">
+        <a class="navbar-brand" href="SGPHome.html">
+          <img src=".//imgs/Logo-2.png" alt="Max Logo" style="height: 60px; width: 220px">
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-1">
+                    <a class="nav-link" href="/"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item mr-1 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-list"></i> Operación</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="Presupuesto.html">Presupuesto</a>
+                                <a class="dropdown-item" href="Turno.html">Turno</a>
+                                <a class="dropdown-item" href="Instalacion.html">Instalación</a>
+                                <a class="dropdown-item" href="Emergencia.html">Emergencia</a>
+                        </div>
+                    </li>
+                <li class="nav-item mr-1">
+                    <a class="nav-link" href="#"><i class="fas fa-question-circle"></i> About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-user"></i> Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--COLLAPSE-->
+    <div class="accordion container" style="margin-top: 150px; margin-bottom: 100px;" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    PREGUNTAS FRECUENTES
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                        <div class="row">
+                                <div class="col-4">
+                                  <div class="list-group" id="list-tab" role="tablist">
+                                    <a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-home" role="tab" aria-controls="home">¿Como instalar?</a>
+                                    <a class="list-group-item list-group-item-action"  data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">¿Que hacer si no funciona?</a>
+                                    <a class="list-group-item list-group-item-action"  data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">¿Los productos cuentan con garantia?</a>
+                                    <a class="list-group-item list-group-item-action"  data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">¿Que precauciones tener contra incendio?</a>
+                                    <a class="list-group-item list-group-item-action"  data-toggle="list" href="#list-fire" role="tab" aria-controls="settings">¿Que hacer si se electrocuta?</a>
+                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-elec" role="tab" aria-controls="settings">¿Como limpiar el?</a>
+                                  </div>
+                                </div>
+                                <div class="col-8">
+                                  <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, alias. Obcaecati illum hic, velit magnam ad quas eius vitae neque tempora praesentium sint et voluptatum officia vero earum, ipsa omnis?</div>
+                                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio et quis eius officia perferendis acdeleniti sed odit totam ullam. Provident nemo explicabo molestias autem?</div>
+                                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque, molestiae molestias eaque veniam harum nam quos? Facilis sit libero nemo. Ducimus laudantium facilis porro providen</div>
+                                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque numquam porro voluptate ipsam amet voluptatem placeat sit q ducimus maxime ratione tempora molestias earum!</div>
+                                    <div class="tab-pane fade" id="list-fire" role="tabpanel" aria-labelledby="list-settings-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore alias inventore quod omnis sapiente laborum totam a aliquam, molestias esse. Animi officiis modi commodi poimus dolore!</div>
+                                    <div class="tab-pane fade" id="list-elec" role="tabpanel" aria-labelledby="list-settings-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, maiores voluptas minus nostrum perspiciatis deserunt at ullamri quia eius beatae. Aliquam perspiciatis non dicta fugiat.</div>
+                                  </div>
+                                </div>
+                              </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    SOLICITUD ASESORAMIENTO
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                        
+                              <form>
+                                    <div class="form-row">
+                                      <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                      </div>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="inputAddress">Address</label>
+                                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="inputAddress2">Address 2</label>
+                                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                    </div>
+                                    <div class="form-row">
+                                      <div class="form-group col-md-6">
+                                        <label for="inputCity">City</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                        <label for="inputState">State</label>
+                                        <select id="inputState" class="form-control">
+                                          <option selected>Choose...</option>
+                                          <option>...</option>
+                                        </select>
+                                      </div>
+                                      <div class="form-group col-md-2">
+                                        <label for="inputZip">Zip</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                      </div>
+                                    </div>
+                                    <div class="form-group">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                          Check me out
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+     
+    <!--Custom JS-->
+     <script type="text/javascript" src="js/funcs.js"></script>
+    <!--Jquery, Popper, JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>     
+</body>
+</html>
